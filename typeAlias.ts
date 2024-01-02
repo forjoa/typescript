@@ -52,3 +52,8 @@ console.log(ironman)
 let ann: number | string
 ann = 1 // ✅
 ann = 'Hi' // ✅
+
+
+// We can also use types to check something. For example: 
+type Check<T> = T extends string ? 'string': 'non-string'
+let result: Check<1> // Type of result: 'non-string'

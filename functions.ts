@@ -50,3 +50,8 @@ sayHiFromFunction(sayHi)
 function throwError(message: string): never {
   throw new Error(message)
 }
+
+/* Default values in parameters */
+function greet(name: string, greeting: string = 'Hello') {
+  console.log(`${greeting}, ${name}`)
+}
